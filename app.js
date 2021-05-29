@@ -1,11 +1,14 @@
 var btntranslate = document.querySelector("#btn-translate");
 
-var textarea = document.querySelector("#txt-input");
-console.log(textarea);
+var txtinput = document.querySelector("#txt-input");
 
-  btntranslate.addEventListener("click", function clickeventhandler() {
-    console.log("clicked")
+var outputdiv = document.querySelector("#output");
 
-    console.log("input", textarea.value);
-});
+
+function clickHandler() {
+  outputdiv.innerText = "sdccc " + txtinput.value ;
+};
+
+btntranslate.addEventListener("click" , clickHandler)
+
 
