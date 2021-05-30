@@ -7,42 +7,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
     <style>
+        body {
+            margin: 0%;
+        }
+
         textarea {
-            width: 90%;
+            width: 70%;
             height: 10vh;
             display: block;
-            margin: 1rem;
+            margin: auto;
+            margin-top: 8vh;
+            margin-bottom: 3%;
             padding: 2%;
         }
 
         h1 {
-            margin-left: 35%;
-            padding-bottom: 5%;
+            display: block;
+            font-size: 40px;
+            text-align: center;
+            padding-bottom: 3vh
         }
 
         #btn-translate {
-            margin-left: 40%;
+            text-align: center;
+            margin: auto;
+            display: block;
+            font-size: 20px;
+
         }
 
-        #output{
-            border:1px solid black;
-            width:90%;
-            height:10vh;
+        #output {
+            border: 1px solid black;
+            margin: auto;
+            width: 80%;
+            height: 10vh;
             display: block;
-            margin:1rem;
             padding: 2%;
+        }
+
+        #header{
+            background-color: #FCD34D;
+            padding: 0.5rem;
+            border-bottom-left-radius: 1rem;
+        }
+
+        #output-heading {
+            text-align: center;
+            padding: 3vh;
+        }
+
+        #footer{
+            background-color: #FCD34D;
+            padding: 3rem;
+        
+
         }
     </style>
 </head>
 
 <body>
-    <h1>Talk banana</h1>
+    <nav id="header">
+
+        <h1>MINIONS TALK</h1>
+    </nav>
     <textarea id="txt-input" placeholder="I am RV-bot, write here"></textarea>
 
     <button id="btn-translate">Translate</button>
 
-<div>output will come here 👇</div>
-<div id="output"></div>
+    <div id="output-heading">output will come here 👇</div>
+    <div id="output"></div>
+
+    <nav id="footer">
+
+    </nav>
 
 
 
